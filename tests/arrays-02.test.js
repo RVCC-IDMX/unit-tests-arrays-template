@@ -4,6 +4,9 @@ const {
   splitTheString,
   makeAllUpperCase,
   makeAllLowerCase,
+  makeWordTitleCase,
+  replaceTheString,
+  makeSentenceTitleCase,
 } = require('../src/arrays-02');
 
 test('findTheCharacterAtIndex', () => {
@@ -42,4 +45,25 @@ test('makeAllUpperCase', () => {
 test('makeAllLowerCase', () => {
   const str = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
   expect(makeAllLowerCase(str)).toBe('abcdefghijklmnopqrstuvwxyz');
+});
+
+test('makeWordTitleCase', () => {
+  let word = 'california';
+  expect(makeWordTitleCase(word)).toBe('California');
+  word = 'CaliFORnia';
+  expect(makeWordTitleCase(word)).toBe('California');
+});
+
+test('replaceTheString', () => {
+  const sentence = 'The quick brown fox jumps over the lazy dog';
+  expect(replaceTheString(sentence, 'quick', 'slow')).toBe(
+    'The slow brown fox jumps over the lazy dog'
+  );
+});
+
+test('makeSentenceTitleCase', () => {
+  const sentence = 'the quick brown fox jumps over the lazy dog';
+  expect(makeSentenceTitleCase(sentence)).toBe(
+    'The Quick Brown Fox Jumps Over The Lazy Dog'
+  );
 });

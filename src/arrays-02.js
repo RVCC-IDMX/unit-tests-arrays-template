@@ -5,11 +5,16 @@
  * Path: src/arrays-02.js
  *
  * Description: String methods
- * https://bit.ly/3AEQg4x
+ * Textbook: https://bit.ly/3AEQg4x
  *
- * ? Many string methods treat strings as if they are arrays of characters.
+ * ? Strings are primitive data types and arrays are objects (passed by reference).
+ * ?
+ * ? But many string methods treat strings as if they are arrays of characters.
  * ? A big difference is that the string methods are not destructive because
- * ? they return a new string because strings are immutable.
+ * ? they must return a new string.
+ * ?
+ * ? This means methods like replace() and toUpperCase() return new strings:
+ * ? they cannot modify the string on which they are invoked because strings are immutable.
  *
  * ? The more popular string methods are:
  * ? - charAt()
@@ -23,10 +28,10 @@
  * ? - toUpperCase()
  * ? - trim()
  * ? - valueOf()
- * ? - length
+ * ? - length - not a method but a property
  * ? - split()
- * ? - join()
  * ? - replace()
+ * ? refer to the textbook for more details https://bit.ly/3AEQg4x
  * */
 
 /**
@@ -62,13 +67,51 @@ function splitTheString(str, separator) {
 /**
  * Returns a string all in uppercase
  * @param {string} str - the string
- * @returns {string} - the string as all uppercase
+ * @returns {string} - the string with all the letters in uppercase
  */
 function makeAllUpperCase(str) {
   // write your code here & return value
 }
 
+/**
+ * Returns a string all in lowercase
+ * @param {string} str - the string
+ * @returns {string} - the string with all the letters lowercase
+ */
 function makeAllLowerCase(str) {
+  // write your code here & return value
+}
+
+/**
+ * Returns a word with its first letter capitalized and all other letters in lowercase
+ * @param {string} word - a single word
+ * @returns {string} - the string with all the letters lowercase
+ * ? ex: 'hello' => 'Hello'
+ * ? ex: 'HELLO' => 'Hello'
+ */
+function makeWordTitleCase(word) {
+  // write your code here & return value
+}
+
+/**
+ * Returns a string with some of it replaced
+ * @param {string} str - the string
+ * @param {string} oldStr - the string to be replaced
+ * @param {string} newStr - the string to replace the old string
+ * ? ex: 'hello world', 'hello', 'hi' => 'hi world'
+ */
+function replaceTheString(str, oldStr, newStr) {
+  // write your code here & return value
+}
+
+/**
+ * Returns a string with the first letter of each word capitalized
+ * @param {string} sentence - the sentence
+ * @returns {string} - the sentence with all the words capitalized
+ * ? ex: 'hello world' => 'Hello World'
+ * ? NOTE: this is more challenging than the others have been
+ */
+function makeSentenceTitleCase(sentence) {
   // write your code here & return value
 }
 
@@ -78,4 +121,7 @@ module.exports = {
   splitTheString,
   makeAllUpperCase,
   makeAllLowerCase,
+  makeWordTitleCase,
+  replaceTheString,
+  makeSentenceTitleCase,
 };
