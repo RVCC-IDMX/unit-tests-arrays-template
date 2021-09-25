@@ -55,7 +55,8 @@ function findMinMax(arr) {
  * @param {array} numbers - the array with 10 digits of a phone number
  * @returns {string} - the phone number in the format (123) 456-7890
  * ? example: [1, 2, 3, 4, 5, 6, 7, 8, 9, 0] => '(123) 456-7890'
- * ? must use the join() array method and the splice() string method
+ * ? must use the splice() array method
+ * ? must use the join() array method
  * ? must not change the original array
  *
  * ? NOTE: Arrays get passed by reference, which means they can be accidentally
@@ -78,10 +79,12 @@ function getTelNo(numbers) {
  * Return that integer.
  * ? example: [-3, 1, 2, 3, -1, -4, -2] => -4
  * ? example: [-3, 1, 2, 3, -1, -4, 4, -2, 5] => 5
- * ! Positive/Negative pairs can appear more than once, which may complicate the problem
+ * ! Positive/Negative pairs can appear more than once, which may complicate the solution
  * ? example: [-3, 3, 3, 4, 5, -4, -3] => 5
  *
  * ? must not change the original array
+ *
+ * ? you may solve this any way that properly passes the test cases (no hard-coding)
  *
  * ? hint: Here's how I solved this problem
  * ? Think of the Memory card game where you remove 2 cards
@@ -89,7 +92,7 @@ function getTelNo(numbers) {
  * ? The unmatched card is the one that is left after all the pairs are removed.
  * ?
  * ? Ok, let's remove matched pairs of elements from the array as they are found
- * ? until you find something that cannot be matched.
+ * ? until you find an integer that cannot be matched.
  * ? You know how to remove elements from an array.
  * ? The array methods pop() and splice() can be used
  * ? but they are destructive, which means you should work on a copy array.
@@ -99,8 +102,10 @@ function getTelNo(numbers) {
  * ?
  * ? Inside the loop I used the pop() array method to get a number to check, then I
  * ? searched for the index in the array of a number with the opposite sign. (multiply by -1)
- * ? If I found a match, I spliced the array at that index.
- * ? If I didn't find a match, I had found the lone number, so I returned it.
+ * ? If I found an index, I spliced the array at that index to delete that element.
+ * ? If I didn't find an index, I had found the lone number, so I returned it.
+ * ?
+ * ? You can assume that the array will always have an unmatched number.
  * ?
  * ? If you do it a different way, let me know!!!
  * ?
