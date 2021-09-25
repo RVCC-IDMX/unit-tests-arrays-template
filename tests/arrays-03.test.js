@@ -9,6 +9,7 @@ const {
   makeMirrorArray,
   dropRight,
   dropLeft,
+  checkArrayForValue,
 } = require('../src/arrays-03');
 
 test('addUpArrayElements', () => {
@@ -82,4 +83,13 @@ test('dropLeft', () => {
   const expectedArray = [5, 6, 7, 8, 9, 10];
   expect(dropLeft(sampleArray, 4)).toEqual(expectedArray);
   expect(dropLeft(sampleArray, 4)).not.toBe(sampleArray);
+});
+
+test('checkArrayForValue', () => {
+  const sampleArray = [1, true, 3, NaN];
+  expect(checkArrayForValue(sampleArray, 1)).toBe(true);
+  expect(checkArrayForValue(sampleArray, true)).toBe(true);
+  expect(checkArrayForValue(sampleArray, 3)).toBe(true);
+  expect(checkArrayForValue(sampleArray, NaN)).toBe(true);
+  expect(checkArrayForValue(sampleArray, 'a')).toBe(false);
 });

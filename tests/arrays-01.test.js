@@ -1,13 +1,34 @@
 const {
+  getFirstValue,
+  getNthValue,
+  makeArray,
   createFirstFivePrimes,
   createSizedArray,
   modifyArrayByAdding,
   modifyArrayByDeleting,
   findElementAtIndex,
+  findElementByValue,
   changeElementAtIndex,
   makeStringFromArray,
   createShallowCopy,
 } = require('../src/arrays-01');
+
+test('getFirstValue', () => {
+  expect(getFirstValue([1, 2, 3, 4, 5])).toBe(1);
+  expect(getFirstValue([])).toBe(undefined);
+});
+
+test('getNthValue', () => {
+  expect(getNthValue([1, 2, 3, 4, 5], 2)).toBe(3);
+  expect(getNthValue([1, 2, 3, 4, 5], -1)).toBe(undefined);
+  expect(getNthValue([], 9)).toBe(undefined);
+});
+
+test('makeArray', () => {
+  expect(makeArray(1, 2, 3, 4)).toBe([1, 2, 3, 4]);
+  expect(makeArray('a', 'b', 'c', 'd')).toBe(['a', 'b', 'c', 'd']);
+  expect(makeArray(1, 'b', 3, 'd')).toBe([1, 'b', 3, 'd']);
+});
 
 test('createFirstFivePrimes', () => {
   expect(typeof createFirstFivePrimes()).toBe('object');
@@ -42,6 +63,12 @@ test('findElementAtIndex', () => {
   expect(findElementAtIndex([1, 2, 3], 0)).toBe(1);
   expect(findElementAtIndex([1, 2, 3], 1)).toBe(2);
   expect(findElementAtIndex([1, 2, 3], 2)).toBe(3);
+});
+
+test('findElementByValue', () => {
+  expect(findElementByValue([1, 2, 3], 1)).toBe(0);
+  expect(findElementByValue([1, 2, 3], 2)).toBe(1);
+  expect(findElementByValue([1, 2, 3], 3)).toBe(2);
 });
 
 test('changeElementAtIndex', () => {

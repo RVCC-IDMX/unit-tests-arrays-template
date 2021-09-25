@@ -122,8 +122,24 @@ function dropRight(arr, n) {
  * @param {array} arr - the array
  * @param {number} n - the number of elements to take from the beginning
  * @returns {array} - a new array with the n elements taken from the beginning
+ * ? example: [1, 2, 3, 4, 5], n = 2 => [3, 4, 5]
+ * ? example: [1, 2, 3, 4, 5], n = 3 => [4, 5]
+ * ? must use the slice() array method
  */
 function dropLeft(arr, n) {
+  // write your code here & return value
+}
+
+/**
+ * Checks if an array contains a given number
+ * @param {array} arr the array to check
+ * @param {*} val - the test value to check
+ * @returns {boolean} - true if the array contains the value, false otherwise
+ * ? example: [1, 2, 3, 4, 5], val = 3 => true
+ * ? example: [1, 2, 3, 4, 5], val = 6 => false
+ * ? must use the includes() array method
+ */
+function checkArrayForValue(arr, val) {
   // write your code here & return value
 }
 
@@ -138,4 +154,5 @@ module.exports = {
   makeMirrorArray,
   dropRight,
   dropLeft,
+  checkArrayForValue,
 };

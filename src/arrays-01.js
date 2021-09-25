@@ -16,6 +16,40 @@
  */
 
 /**
+ * Returns the first element (indexing from 0) of an array
+ * @param {array} arr - the array
+ * @returns {*} - the first (0th) element in the array
+ * ? example: [1, 2, 3, 4, 5] => 1
+ * ? https://bit.ly/3EUI0j9 - Reading and Writing Array Elements
+ */
+function getFirstValue(arr) {
+  // write your code here & return value
+}
+
+/**
+ * Returns the nth element (indexing from 0) in the array
+ * @param {array} arr - the array
+ * @param {number} n - the nth element in the array
+ * @returns {*} - the nth element in the array
+ * ? example: [1, 2, 3, 4, 5], n = 2 => 3
+ */
+function getNthValue(arr, n) {
+  // write your code here & return value
+}
+
+/**
+ * Returns a new array with 4 elements
+ * @param {*} a - 0th element of the array
+ * @param {*} b - 1st element of the array
+ * @param {*} c - 2nd element of the array
+ * @param {*} d - 3rd element of the array
+ * @returns {array} - array of the 4 elements
+ */
+function makeArray(a, b, c, d) {
+  // write your code here & return value
+}
+
+/**
  * Creates a new array of the first 5 prime numbers
  * @returns {array} array of the first 5 prime numbers
  * starting at 2
@@ -69,6 +103,18 @@ function findElementAtIndex(arr, index) {
 }
 
 /**
+ * Finds the first index of an element in an array
+ * @param {array} arr - the array
+ * @returns {number} - integer index of the first occurrence of the element
+ * ? example: [1, 2, 3, 4, 5], value = 3 => 2
+ * ? example: [1, 2, 3, 4, 5], value = 6 => -1
+ * ? hint: https://bit.ly/2ZyFaAj - Array Searching and Sorting Methods
+ */
+function findElementByValue(arr, value) {
+  // write your code here & return value
+}
+
+/**
  * Modifies the array replacing a value at index with a new value
  * @param {array} arr - the passed in array
  * @param {number} index - the index at which to find the element
@@ -103,11 +149,15 @@ function createShallowCopy(arr) {
 }
 
 module.exports = {
+  getFirstValue,
+  getNthValue,
+  makeArray,
   createFirstFivePrimes,
   createSizedArray,
   modifyArrayByAdding,
   modifyArrayByDeleting,
   findElementAtIndex,
+  findElementByValue,
   changeElementAtIndex,
   makeStringFromArray,
   createShallowCopy,
