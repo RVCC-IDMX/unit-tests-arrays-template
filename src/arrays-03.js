@@ -14,10 +14,105 @@
  * @param {array} arr - the array to convert to a number
  * @returns {number} - the sum of all the elements of the array
  * ? example: [1, 2, 3, 4, 5] => 15
- * ? must use forEach() array method
+ * ? must use the forEach() array method
  */
 function addUpArrayElements(arr) {
   // write your code here & return value
 }
 
-module.exports = addUpArrayElements;
+/**
+ * Squares each number if the array
+ * @param {array} arr - the passed in array of numbers
+ * @returns {array} - a new array with all the elements squared
+ * ? example: [1, 2, 3, 4, 5] => [1, 4, 9, 16, 25]
+ * ? must use the map() array method
+ */
+function makeSquareNumbers(arr) {
+  // write your code here & return value
+}
+
+/**
+ * Filters out words based on length
+ * @param {array} arr - the array of words
+ * @param {number} length - the length of the word to filter by
+ * @returns {array} - a new array with all the words that are longer than
+ * the given length
+ * ? example: ['yes', 'goodbye', 'no', 'stop', 'maybe'], length = 4
+ * ? => ['goodbye', 'maybe']
+ * ? must use the filter() array method
+ */
+function filterForLargeWords(arr, length) {
+  // write your code here & return value
+}
+
+/**
+ * Finds the first even number in an array of integers
+ * @param {array} arr - the array of integer numbers
+ * @returns {number} - the first even number in the array
+ * ? example: [1, 2, 3, 4, 5] => 2
+ * ? must use the find() array method
+ */
+function findTheFirstEvenNumber(arr) {
+  // write your code here & return value
+}
+
+/**
+ * Sorts an array of words alphabetically
+ * @param {array} arr - the array of words to sort
+ * @returns {array} - a new array with the words sorted in alphabetical order
+ * ?  order is ascending and case sensitive
+ * ? example: ["ant", "Bug", "cat", "Dog"] => ["Bug","Dog","ant","cat"]
+ * ? must use the sort() array method
+ */
+function sortCaseSensitive(arr) {
+  // write your code here & return value
+}
+
+/**
+ * Joins together all the elements of an array into a string
+ * @param {array} arr  - the array of words to join
+ * @param {string} separator - the string to use as a separator
+ * @returns {string} - a string with all the words joined together
+ * ? example: ["ant", "Bug", "cat", "Dog"], separator = '' => 'antBugcatDog'
+ * ? example: ["ant", "Bug", "cat", "Dog"], separator = '-' => 'ant-Bug-cat-Dog'
+ * ? must the join() array method
+ */
+function makeTheString(arr, separator) {
+  // write your code here & return value
+}
+
+/**
+ * Take an array and reverse the elements
+ * @param {array} arr - the array to reverse
+ * @returns {array} - a new array with the elements reversed
+ * ? example: [1, 2, 3, 4, 5] => [5, 4, 3, 2, 1]
+ * ? must use the reverse() array method
+ */
+function reverseTheArray(arr) {
+  // write your code here & return value
+}
+
+/**
+ * Adds additional elements to the end of an array to make it a mirror
+ * @param {array} arr - the array to make into a mirror
+ * @returns {array} - a new array with the elements added to mirror the original
+ * ? example: [ 1, 2, 3] => [1, 2, 3, 2, 1]
+ * ? example: [ 1, 2, 3, 4] => [1, 2, 3, 4, 3, 2, 1]
+ * ? must use the concat() array method
+ */
+function makeMirrorArray(arr) {
+  // write your code here & return value
+}
+
+// splice()
+
+module.exports = {
+  addUpArrayElements,
+  makeSquareNumbers,
+  filterForLargeWords,
+  findTheFirstEvenNumber,
+  sortCaseSensitive,
+  makeTheString,
+  reverseTheArray,
+  makeMirrorArray,
+};
