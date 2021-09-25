@@ -7,6 +7,8 @@ const {
   makeTheString,
   reverseTheArray,
   makeMirrorArray,
+  dropRight,
+  dropLeft,
 } = require('../src/arrays-03');
 
 test('addUpArrayElements', () => {
@@ -66,4 +68,18 @@ test('makeMirrorArray', () => {
   expectedArray = [1, 4, 8, 10, -21, 10, 8, 4, 1];
   expect(makeMirrorArray(sampleArray)).toEqual(expectedArray);
   expect(makeMirrorArray(sampleArray)).not.toBe(sampleArray);
+});
+
+test('dropRight', () => {
+  const sampleArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+  const expectedArray = [1, 2, 3, 4, 5, 6, 7];
+  expect(dropRight(sampleArray, 3)).toEqual(expectedArray);
+  expect(dropRight(sampleArray, 3)).not.toBe(sampleArray);
+});
+
+test('dropLeft', () => {
+  const sampleArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+  const expectedArray = [5, 6, 7, 8, 9, 10];
+  expect(dropLeft(sampleArray, 4)).toEqual(expectedArray);
+  expect(dropLeft(sampleArray, 4)).not.toBe(sampleArray);
 });

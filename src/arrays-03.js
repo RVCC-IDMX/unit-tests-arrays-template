@@ -104,7 +104,28 @@ function makeMirrorArray(arr) {
   // write your code here & return value
 }
 
-// splice()
+/**
+ * Creates a slice of array with n elements dropped from the end
+ * @param {array} arr - the array
+ * @param {number} n - the number (integer) of elements at the end to drop
+ * @returns {array} - a new array with the n elements dropped from the end
+ * ? example: [1, 2, 3, 4, 5], n = 2 => [1, 2, 3]
+ * ? example: [1, 2, 3, 4, 5], n = 3 => [1, 2]
+ * ? must use the slice() array method
+ */
+function dropRight(arr, n) {
+  // write your code here & return value
+}
+
+/**
+ * Creates a slice of array with n elements dropped from the beginning
+ * @param {array} arr - the array
+ * @param {number} n - the number of elements to take from the beginning
+ * @returns {array} - a new array with the n elements taken from the beginning
+ */
+function dropLeft(arr, n) {
+  // write your code here & return value
+}
 
 module.exports = {
   addUpArrayElements,
@@ -115,4 +136,6 @@ module.exports = {
   makeTheString,
   reverseTheArray,
   makeMirrorArray,
+  dropRight,
+  dropLeft,
 };
