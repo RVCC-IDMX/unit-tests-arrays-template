@@ -14,7 +14,7 @@
  * @param {array} arr - the array to convert to a number
  * @returns {number} - the sum of all the elements of the array
  * ? example: [1, 2, 3, 4, 5] => 15
- * ? must use the forEach() array method
+ * ? must use the forEach() array method - https://youtu.be/GNXZpM-15Xg
  */
 function addUpArrayElements(arr) {
   // write your code here & return value
@@ -25,7 +25,7 @@ function addUpArrayElements(arr) {
  * @param {array} arr - the passed in array of numbers
  * @returns {array} - a new array with all the elements squared
  * ? example: [1, 2, 3, 4, 5] => [1, 4, 9, 16, 25]
- * ? must use the map() array method
+ * ? must use the map() array method - https://youtu.be/nO4fLugOX9k
  */
 function makeSquareNumbers(arr) {
   // write your code here & return value
@@ -39,7 +39,7 @@ function makeSquareNumbers(arr) {
  * the given length
  * ? example: ['yes', 'goodbye', 'no', 'stop', 'maybe'], length = 4
  * ? => ['goodbye', 'maybe']
- * ? must use the filter() array method
+ * ? must use the filter() array method - https://youtu.be/JY5HUDMudew
  */
 function filterForLargeWords(arr, length) {
   // write your code here & return value
@@ -50,7 +50,7 @@ function filterForLargeWords(arr, length) {
  * @param {array} arr - the array of integer numbers
  * @returns {number} - the first even number in the array
  * ? example: [1, 2, 3, 4, 5] => 2
- * ? must use the find() array method
+ * ? must use the find() array method - https://youtu.be/KCx0mQEC4Zw
  */
 function findTheFirstEvenNumber(arr) {
   // write your code here & return value
@@ -62,7 +62,7 @@ function findTheFirstEvenNumber(arr) {
  * @returns {array} - a new array with the words sorted in alphabetical order
  * ?  order is ascending and case sensitive
  * ? example: ["ant", "Bug", "cat", "Dog"] => ["Bug","Dog","ant","cat"]
- * ? must use the sort() array method
+ * ? must use the sort() array method - https://youtu.be/3bLjcUmWveA
  */
 function sortCaseSensitive(arr) {
   // write your code here & return value
@@ -75,7 +75,7 @@ function sortCaseSensitive(arr) {
  * @returns {string} - a string with all the words joined together
  * ? example: ["ant", "Bug", "cat", "Dog"], separator = '' => 'antBugcatDog'
  * ? example: ["ant", "Bug", "cat", "Dog"], separator = '-' => 'ant-Bug-cat-Dog'
- * ? must the join() array method
+ * ? must the join() array method - https://youtu.be/90MVWda5DlM
  */
 function makeTheString(arr, separator) {
   // write your code here & return value
@@ -86,7 +86,8 @@ function makeTheString(arr, separator) {
  * @param {array} arr - the array to reverse
  * @returns {array} - a new array with the elements reversed
  * ? example: [1, 2, 3, 4, 5] => [5, 4, 3, 2, 1]
- * ? must use the reverse() array method
+ * ? must use the reverse() array method - https://mzl.la/3EXccdo
+ *  must not use the revers on a shallow copy of the original array - https://bit.ly/39ASLc0
  */
 function reverseTheArray(arr) {
   // write your code here & return value
@@ -98,7 +99,7 @@ function reverseTheArray(arr) {
  * @returns {array} - a new array with the elements added to mirror the original
  * ? example: [ 1, 2, 3] => [1, 2, 3, 2, 1]
  * ? example: [ 1, 2, 3, 4] => [1, 2, 3, 4, 3, 2, 1]
- * ? must use the concat() array method
+ * ? must use the concat() array method - https://bit.ly/3lZkNE2
  */
 function makeMirrorArray(arr) {
   // write your code here & return value
@@ -111,7 +112,7 @@ function makeMirrorArray(arr) {
  * @returns {array} - a new array with the n elements dropped from the end
  * ? example: [1, 2, 3, 4, 5], n = 2 => [1, 2, 3]
  * ? example: [1, 2, 3, 4, 5], n = 3 => [1, 2]
- * ? must use the slice() array method
+ * ? must use the slice() array method - https://youtu.be/ok-dya7hNm0
  */
 function dropRight(arr, n) {
   // write your code here & return value
@@ -124,7 +125,7 @@ function dropRight(arr, n) {
  * @returns {array} - a new array with the n elements taken from the beginning
  * ? example: [1, 2, 3, 4, 5], n = 2 => [3, 4, 5]
  * ? example: [1, 2, 3, 4, 5], n = 3 => [4, 5]
- * ? must use the slice() array method
+ * ? must use the slice() array method - https://youtu.be/ok-dya7hNm0
  */
 function dropLeft(arr, n) {
   // write your code here & return value
@@ -137,7 +138,7 @@ function dropLeft(arr, n) {
  * @returns {boolean} - true if the array contains the value, false otherwise
  * ? example: [1, 2, 3, 4, 5], val = 3 => true
  * ? example: [1, 2, 3, 4, 5], val = 6 => false
- * ? must use the includes() array method
+ * ? must use the includes() array method - https://youtu.be/GNnHej31OGY
  */
 function checkArrayForValue(arr, val) {
   // write your code here & return value
