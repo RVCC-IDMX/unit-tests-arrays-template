@@ -1,3 +1,4 @@
+/* eslint-disable no-param-reassign */
 /*
  * arrays-01.js
  * Language: javascript
@@ -23,17 +24,6 @@
  * ? https://bit.ly/3EUI0j9 - Reading and Writing Array Elements
  */
 function getFirstValue(arr) {
-  // write your code here & return value
-}
-
-/**
- * Returns the nth element (indexing from 0) in the array
- * @param {array} arr - the array
- * @param {number} n - the nth element in the array
- * @returns {*} - the nth element in the array
- * ? example: [1, 2, 3, 4, 5], n = 2 => 3
- */
-function getNthValue(arr, n) {
   // write your code here & return value
 }
 
@@ -65,6 +55,7 @@ function createFirstFivePrimes() {
  * @returns {array} - new array with the specified number of elements
  * ? create an array of numbers from 0 to size - 1
  * ? example: size = 3 => [0, 1, 2]
+ * ? must use a for loop
  */
 function createSizedArray(size) {
   // write your code here & return value
@@ -131,7 +122,7 @@ function changeElementAtIndex(arr, index, value) {
  * @param {array} arr - array to use
  * @returns {string} - made from array elements
  * ? example: ['a', 'b', 'c'] => 'abc'
- * ? https://bit.ly/3ENwR3M - Iterating Arrays
+ * ? https://mzl.la/3ib7Dm3
  */
 function makeStringFromArray(arr) {
   // write your code here & return value
@@ -150,7 +141,6 @@ function createShallowCopy(arr) {
 
 module.exports = {
   getFirstValue,
-  getNthValue,
   makeArray,
   createFirstFivePrimes,
   createSizedArray,

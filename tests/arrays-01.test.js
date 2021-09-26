@@ -1,6 +1,5 @@
 const {
   getFirstValue,
-  getNthValue,
   makeArray,
   createFirstFivePrimes,
   createSizedArray,
@@ -18,16 +17,10 @@ test('getFirstValue', () => {
   expect(getFirstValue([])).toBe(undefined);
 });
 
-test('getNthValue', () => {
-  expect(getNthValue([1, 2, 3, 4, 5], 2)).toBe(3);
-  expect(getNthValue([1, 2, 3, 4, 5], -1)).toBe(undefined);
-  expect(getNthValue([], 9)).toBe(undefined);
-});
-
 test('makeArray', () => {
-  expect(makeArray(1, 2, 3, 4)).toBe([1, 2, 3, 4]);
-  expect(makeArray('a', 'b', 'c', 'd')).toBe(['a', 'b', 'c', 'd']);
-  expect(makeArray(1, 'b', 3, 'd')).toBe([1, 'b', 3, 'd']);
+  expect(makeArray(1, 2, 3, 4)).toEqual([1, 2, 3, 4]);
+  expect(makeArray('a', 'b', 'c', 'd')).toEqual(['a', 'b', 'c', 'd']);
+  expect(makeArray(1, 'b', 3, 'd')).toEqual([1, 'b', 3, 'd']);
 });
 
 test('createFirstFivePrimes', () => {
