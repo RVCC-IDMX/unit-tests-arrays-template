@@ -85,7 +85,8 @@ function makeAllLowerCase(str) {
 /**
  * Returns a word with its first letter capitalized and all other letters in lowercase
  * @param {string} word - a single word
- * @returns {string} - the string with all the letters lowercase
+ * @returns {string} - the string with all the letters lowercase expect the first one
+ * which is uppercase
  * ? ex: 'hello' => 'Hello'
  * ? ex: 'HELLO' => 'Hello'
  */
@@ -110,6 +111,7 @@ function replaceTheString(str, oldStr, newStr) {
  * @returns {string} - the sentence with all the words capitalized
  * ? ex: 'hello world' => 'Hello World'
  * ? NOTE: this is more challenging than the others have been
+ * ? hint: use split() and makeWordTitleCase()
  */
 function makeSentenceTitleCase(sentence) {
   // write your code here & return value
