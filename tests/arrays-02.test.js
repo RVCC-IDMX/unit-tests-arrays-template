@@ -12,7 +12,7 @@ const {
 test('findTheCharacterAtIndex', () => {
   const str = 'abcdefghijklmnopqrstuvwxyz';
   expect(findTheCharacterAtIndex(str, 0)).toBe('a');
-  expect(findTheCharacterAtIndex(str, 25)).toBe('b');
+  expect(findTheCharacterAtIndex(str, 25)).toBe('z');
 });
 
 test('sliceTheString', () => {
