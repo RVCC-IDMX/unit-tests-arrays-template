@@ -36,7 +36,7 @@ function removeStrings(arr) {
  * @returns {array} - a new array with 2 elements with the minimum and maximum values,
  *  the minimum value is the first element and the maximum value is the second element
  * ? example: [1, 2, 3, 4, 5] => [1, 5]
- * ? example: [1, 2, 23, 4, 5, -10, 6] => [-1, 23]
+ * ? example: [1, 2, 23, 4, 5, -10, 6] => [-10, 23]
  * ?
  * ? We haven't covered how functions and methods can have a variable
  * ? number of arguments passed to it when called but that is how some functions work.
