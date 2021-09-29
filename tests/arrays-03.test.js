@@ -41,7 +41,7 @@ test('findTheFirstEvenNumber', () => {
 
 test('sortCaseSensitive', () => {
   const sampleArray = ['A', 'big', 'black', 'bear', 'is', 'running'];
-  const expectedArray = ['bear', 'big', 'black', 'is', 'running', 'A'];
+  const expectedArray = ['A', 'bear', 'big', 'black', 'is', 'running'];
   expect(sortCaseSensitive(sampleArray)).toEqual(expectedArray);
   expect(sortCaseSensitive(sampleArray)).not.toBe(sampleArray);
 });

@@ -59,6 +59,7 @@ function sliceTheString(str, start, end) {
  * Splits a string into an array of substrings
  * @param {string} str - the string
  * @param {string} separator - the separator
+ * @returns {array} - the array of substrings
  */
 function splitTheString(str, separator) {
   // write your code here & return value
@@ -99,6 +100,7 @@ function makeWordTitleCase(word) {
  * @param {string} str - the string
  * @param {string} oldStr - the string to be replaced
  * @param {string} newStr - the string to replace the old string
+ * @returns {string} - the string with the old string replaced by the new string
  * ? ex: 'hello world', 'hello', 'hi' => 'hi world'
  */
 function replaceTheString(str, oldStr, newStr) {
