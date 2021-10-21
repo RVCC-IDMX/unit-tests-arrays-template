@@ -76,56 +76,9 @@ function getTelNo(numbers) {
   // write your code here & return value
 }
 
-/**
- * Finds the unmatched integer in the array
- * @param {array} numbers - the array with integer numbers where the elements have
- * paired positive and negative values except for one lone integer.
- * @returns {number} - the integer number that has no match
- *
- * For each positive number, there is one negative integer match.
- * This is true for all elements, except for one lone integer that is not paired.
- * Return that integer.
- * ? example: [-3, 1, 2, 3, -1, -4, -2] => -4
- * ? example: [-3, 1, 2, 3, -1, -4, 4, -2, 5] => 5
- * ! Positive/Negative pairs can appear more than once, which may complicate the solution
- * ? example: [-3, 3, 3, 4, 5, -4, -3] => 5
- *
- * ? must not change the original array
- *
- * ? you may solve this any way that properly passes the test cases (no hard-coding)
- *
- * ? hint: Here's how I solved this problem
- * ? Think of the Memory card game where you remove 2 cards
- * ? from the table when a pair is matched.
- * ? The unmatched card is the one that is left after all the pairs are removed.
- * ?
- * ? Ok, let's remove matched pairs of elements from the array as they are found
- * ? until you find an integer that cannot be matched.
- * ? You know how to remove elements from an array.
- * ? The array methods pop and splice can be used
- * ? but they are destructive, which means you should work on a copy array.
- * ?
- * ? Because I wanted to make a smaller and smaller array as I removed pairs,
- * ? I used a while loop, checking the length of the array each time. https://bit.ly/2Z6GVnX
- * ?
- * ? Inside the loop I used the pop array method to get a number to check, then I
- * ? searched for the index in the array of a number with the opposite sign. (multiply by -1)
- * ? If I found an index, I spliced the array at that index to delete that element.
- * ? If I didn't find an index, I had found the lone number, so I returned it.
- * ?
- * ? You can assume that the array will always have an unmatched number.
- * ?
- * ? If you do it a different way, let me know!!!
- * ?
- */
-function getUnmatchedInteger(numbers) {
-  // write your code here & return value
-}
-
 module.exports = {
   getAbsoluteSum,
   removeStrings,
   findMinMax,
   getTelNo,
-  getUnmatchedInteger,
 };
