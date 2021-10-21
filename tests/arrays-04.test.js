@@ -3,7 +3,6 @@ const {
   removeStrings,
   findMinMax,
   getTelNo,
-  getUnmatchedInteger,
 } = require('../src/arrays-04');
 
 test('getAbsoluteSum', () => {
@@ -33,13 +32,4 @@ test('getTelNo', () => {
   const checkArray = [...sampleArray];
   expect(getTelNo(sampleArray)).toBe('(123) 456-7890');
   expect(sampleArray).toEqual(checkArray);
-});
-
-test('getUnmatchedInteger', () => {
-  let sampleArray = [-3, 3, 3, 4, 5, -4, -3, -4, 4, 10, -10];
-  const checkArray = [...sampleArray];
-  expect(getUnmatchedInteger(sampleArray)).toBe(5);
-  expect(sampleArray).toEqual(checkArray);
-  sampleArray = [-3, 1, 2, 3, -1, -4, -2];
-  expect(getUnmatchedInteger(sampleArray)).toBe(-4);
 });
