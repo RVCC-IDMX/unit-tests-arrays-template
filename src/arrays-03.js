@@ -87,7 +87,7 @@ function makeTheString(arr, separator) {
  * @returns {array} - a new array with the elements reversed
  * ? example: [1, 2, 3, 4, 5] => [5, 4, 3, 2, 1]
  * ? must use the reverse() array method - https://mzl.la/3EXccdo
- *  must not use the revers on a shallow copy of the original array - https://bit.ly/39ASLc0
+ *  must use the reverse on a shallow copy of the original array - https://bit.ly/39ASLc0
  */
 function reverseTheArray(arr) {
   // write your code here & return value
